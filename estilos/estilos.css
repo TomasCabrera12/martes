@@ -136,9 +136,12 @@ html{
     margin: 1%;
     
 }
-
-
 }
 
+
+.box main:hover{
+    transform: scale(4);
+
+}
 
 
