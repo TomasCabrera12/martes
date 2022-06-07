@@ -32,9 +32,22 @@ h1 {
     font-size: 70px;
     padding: 40px;
     text-align: center;
-
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: aquamarine;
 }
+
+h1:hover{
+    background-color: blueviolet;
+    transition: background-color 2s;
+   
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+
 
 a{
     text-decoration: none;
@@ -55,7 +68,6 @@ p{
     font-size: 25px;
     
 }
-
 
 
 footer{
