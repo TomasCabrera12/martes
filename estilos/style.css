@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  font-size: 20px;
+  padding-top: auto;
+  display: flex;
+  border-style: solid;
+}
+header nav ul li {
+  display: inline-flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: larger;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 30px;
+  font-weight: bold;
+}
+
+/*mobile-smartphone*/
+.logo img {
+  display: block;
+  padding: 0px;
+  float: left;
+  padding: 5px;
+  width: 200px;
+}
+
+h1 {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  padding: 40px;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+}
+
+h1:hover {
+  background-color: blueviolet;
+  transition: background-color 2s;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+}
+
+p {
+  font-size: 25px;
+}
+
+footer {
+  background-color: dimgrey;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+}
+
+input {
+  width: 400px;
+  height: 60px;
+  border-color: rgb(243, 18, 18);
+}
+
+label {
+  display: block;
+}
+
+form {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  background-image: url(../img/fondo\ autos.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 350px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+}
+
+#grilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 2fr 1 fr 100px;
+  gap: 5px;
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    background-color: beige;
+  }
+
+  .grid-container div {
+    background-color: white;
+    grid-template-columns: auto auto;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    margin: 1%;
+  }
+}/*# sourceMappingURL=style.css.map */
