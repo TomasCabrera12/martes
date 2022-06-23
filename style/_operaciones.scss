@@ -1,0 +1,108 @@
+/*Operaciones*/
+$ancho:800px;
+$blue:blue;
+$green:green;
+
+.box_uno{
+    background-color: $blue;
+    width: $ancho/2;
+    height: 40px;
+}
+
+.box_dos{
+    background-color: $green;
+    width: ($ancho/2)-50;
+}
+
+/*Condicionales*/
+$tipografia:perro;
+
+p{
+    @if $tipografia == verde{
+        color:blue;
+    }
+    @else if $tipografia == celeste{
+        color: red;
+    }
+    @else {
+        color: black;
+    }
+}
+
+$mostrar:true;
+.Contenido_tres{
+    @if $mostrar{
+        border: 2px dashed red;
+    }
+}
+
+/*bucle*/
+$i:1;
+
+@for $i from 1 through 3{
+    .casitodos-#{$i}{
+        background-color: darkgreen;
+        color: white;
+        width: 200px*$i;
+    }
+}
+
+/*each*/
+$dimension:200px;
+
+@each $animal in gato, perro, tigre{
+    .#{$animal}-fondo{
+        width:$dimension*2;
+        height: $dimension;
+        background-image:
+        url('../img/#{$animal}.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border:4px, solid crimson;
+    }
+}
+
+/*mapas*/
+$redes: ( /*declaro mapa*/
+    twitter:#55aCee,
+    facebook:#3a5795,
+    instagram:#C25e30,
+ );
+ @each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+ }
+
+ /*Extend*/
+
+ .redSocial{
+    border: 2px solid red;
+    background-color: gold;
+ }
+
+ .redsocial--social{
+    @extend .redSocial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    border-radius: 5px;
+ }
+
+ .redsocial--nueva{
+    @extend .redSocial;
+    font-size: 30px;
+    color: green;
+    border: 3px dashed blue;
+ }
+
+ /*mixin*/
+ @mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+ }
+
+ .my_mixin{
+    @include sizes (500px,50px);
+    background-color: lightcoral;
+ }
