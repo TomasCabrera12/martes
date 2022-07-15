@@ -2,117 +2,182 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration:none;
 }
 
 html {
   font-size: 62.5%;
 }
-
-header {
-  background-color: black;
-  text-align: center;
-  font-size: 20px;
-  padding-top: auto;
-  display: flex;
-  border-style: solid;
-}
-header nav ul li {
-  display: inline-flex;
-}
-header nav ul li a {
-  text-decoration: none;
-  font-size: larger;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  margin: 30px;
-  font-weight: bold;
+body{
+  min-height: 100vh;
+  background: url(../img/90787.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/*mobile-smartphone*/
-.logo img {
-  display: block;
-  padding: 0px;
-  float: left;
-  padding: 5px;
-  width: 200px;
+header{
+  position: fixed;
+  top: 0;left: 0;right: 0;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0,0,0,1);
+padding: 0px 7px;
+display: flex;
+align-items: center;
+justify-content:space-between;
+z-index: 1000;
+
+
+}
+header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+  
+}
+header .navbar ul{
+  list-style: none;
+  
+}
+header .navbar ul li{
+position: relative;
+float: left; 
+
+}
+header .navbar ul li a{
+ font-size: 20px;
+ padding:10px ;
+ color: #333;
+ display:block ;
+ 
+}
+header .navbar ul li a:hover{
+  background-color:#333;
+  color:#ffffff;
+  
 }
 
-h1 {
+.texthome {
+  font-size:30px;
+  text-align:left;
+  padding: 90px;
+  backdrop-filter:blur(8px);
+  width:900px ;
+  color: whitesmoke;
+
+}
+.h1main {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 70px;
-  padding: 40px;
-  text-align: center;
+  padding: 150px;
+  text-align: left;
   flex-wrap: wrap;
-  background-color: aquamarine;
+ padding-left: 50px;
+ padding-bottom:500px ;
 }
-
-h1:hover {
-  background-color: blueviolet;
-  transition: background-color 2s;
-}
-
-.card {
-  border-radius: 5px;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
-}
-
-p {
-  font-size: 25px;
-}
-
 footer {
   background-color: dimgrey;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
+  overflow: hidden;
+  padding: 10px;
+  opacity: .7;
 }
-
-input {
-  width: 400px;
-  height: 60px;
-  border-color: rgb(243, 18, 18);
-}
-
-label {
-  display: block;
-}
-
-form {
-  font-size: 40px;
+.h1contacto{
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  padding-top: 150px;
   text-align: center;
-  color: white;
-  background-image: url(../img/fondo\ autos.jpg);
-  background-size: cover;
-  position: absolute;
-  left: 350px;
+  flex-wrap: wrap;
+ padding-left: 50px;
+ padding-bottom:500px ;
+ 
+}
+.formulario{
+  text-align: center;
+  backdrop-filter:blur(8px);
+  color: beige;
+  font-size:20px;
+  
+}
+.h1lanzmientos{
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  padding-top: 150px;
+  text-align: center;
+  flex-wrap: wrap;
+ padding-left: 50px;
+ padding-bottom:50px ;
+}
+.peugeot{
+  color: beige;
+  backdrop-filter:blur(8px);
+  font-size: medium;
+  text-align: center;
+}
+.cajapeugeot{
+backdrop-filter:blur(8px);
+}
+.h1noticias{
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  padding-top: 150px;
+  text-align: center;
+  flex-wrap: wrap;
+ padding-left: 50px;
+ padding-bottom:50px ;
+}
+.mini{
+  color: beige;
+  backdrop-filter:blur(8px);
+  font-size: medium;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.h1test{
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  padding-top: 150px;
+  text-align: center;
+  flex-wrap: wrap;
+ padding-left: 50px;
+ padding-bottom:50px ;
 }
 
-h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
-}
 
-#grilla {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100px 2fr 1 fr 100px;
-  gap: 5px;
-}
 
-/*desktop*/
-@media (min-width: 1024px) {
-  .grid-container {
-    display: grid;
-    background-color: beige;
+ @media(max-width:991px){
+  header{
+    padding: 20px;
+  }
+  header label{
+    display: initial;
+  }
+  header .navbar{
+    position: absolute;
+    top:100%;left: 0;right: 0;
+    background: transparent;
+    border-top: 1px solid rgba(0, 0, 0,1);
+    color: black;
+  }
+  header .navbar ul li{
+width: 100%;
+  }
+  header .navbar ul li ul{
+    position: relative;
+    width:100% ;
+  }
+  header .navbar ul li a{
+    color: blue;
   }
 
-  .grid-container div {
-    background-color: white;
-    grid-template-columns: auto auto;
-    text-align: center;
-    border: 1px solid black;
-    justify-content: space-evenly;
-    margin: 1%;
   }
-}/*# sourceMappingURL=style.css.map */
+ 
