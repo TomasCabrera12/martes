@@ -1,109 +1,116 @@
 @import "generales"; @import "operaciones";
 
-/*mobile-smartphone*/
-.logo img{
-    display: block;
-    padding: 0px;
-    float: left;
-    padding: 5px; width: 200px;
- 
-}
-
-h1 {
-    color:black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.h1contacto{
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 70px;
-    padding: 40px;
+    padding-top: 150px;
     text-align: center;
-  flex-wrap: wrap;
-  background-color: aquamarine;
-}
-
-h1:hover{
-    background-color: blueviolet;
-    transition: background-color 2s;
+    flex-wrap: wrap;
+   padding-left: 50px;
+   padding-bottom:500px ;
    
-}
-
-.card{
-    border-radius: 5px;
-    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-}
-
-p{
-    font-size: 25px;
-    
-}
-
-footer{
+  }
+  footer {
     background-color: dimgrey;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: medium;
-    
-}
-
-    input{
-    
-    width: 400px;
-    height: 60px;
-    border-color: rgb(243, 18, 18);
-    
-    
-    }
-
-    label{
-    display:block
-    }
-
-    
-    form{
-        font-size: 40px;
-        text-align: center;
-        color: white;
-        background-image: url(../img/fondo\ autos.jpg);
-        background-size: cover;
-        position:absolute;
-        left: 350px;
-        
- }
-
- h2{
-     font-family:'Poppins', sans-serif ;
-     font-size: 50px;
- }
-  
-#grilla{
-    display: grid;
-    
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 2fr 1 fr 100px;
-    gap:5px;
-
-}
-
-/*desktop*/
-@media(min-width:1024px){
-   
-
-  
- .grid-container{
-    display: grid;
-    background-color:black;
-    
-}
-.grid-container div{
-    background-color:white;
-    grid-template-columns: auto auto;
+    overflow: hidden;
+    padding: 10px;
+    opacity: .7;
+  }
+  .formulario{
     text-align: center;
-    border: 1px solid black;
-    justify-content: space-evenly;
-    margin: 1%;
+    backdrop-filter:blur(8px);
+    color: beige;
+    font-size:20px;
     
-}
-
-
-}
-
-
+  }
+  .h1lanzmientos{
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 70px;
+    padding-top: 150px;
+    text-align: center;
+    flex-wrap: wrap;
+   padding-left: 50px;
+   padding-bottom:50px ;
+  }
+  .peugeot{
+    color: beige;
+    backdrop-filter:blur(8px);
+    font-size: medium;
+    text-align: center;
+  }
+  .cajapeugeot{
+  backdrop-filter:blur(8px);
+  text-align: center;
+  }
+  .h1noticias{
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 70px;
+    padding-top: 150px;
+    text-align: center;
+    flex-wrap: wrap;
+   padding-left: 50px;
+   padding-bottom:50px ;
+  }
+  .mini{
+    color: beige;
+    backdrop-filter:blur(8px);
+    font-size: large;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  .h1test{
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 70px;
+    padding-top: 150px;
+    text-align: center;
+    flex-wrap: wrap;
+   padding-left: 50px;
+   padding-bottom:50px ;
+  }
+  .ptest{
+    color: beige;
+    font-size:large;
+    backdrop-filter:blur(8px);
+  }
+  .pruebas{
+    backdrop-filter:blur(8px);
+    text-align: center;
+  }
+  
+   @media(max-width:991px){
+    header{
+      padding: 20px;
+    }
+    header label{
+      display: initial;
+    }
+    header .navbar{
+      position: absolute;
+      top:100%;left: 0;right: 0;
+      background: transparent;
+      border-top: 1px solid rgba(0, 0, 0,1);
+      color: black;
+    }
+    header .navbar ul li{
+  width: 100%;
+    }
+    header .navbar ul li ul{
+      position: relative;
+      width:100% ;
+    }
+    header .navbar ul li a{
+      color: blue;
+    }
+  
+    }
+   
 
