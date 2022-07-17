@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
+  text-transform:capitalize;
   text-decoration:none;
 }
 
@@ -26,8 +26,8 @@ padding: 0px 7px;
 display: flex;
 align-items: center;
 justify-content:space-between;
-z-index: 1000;
-
+background-color: white;
+z-index: 999;
 
 }
 header .logo{
@@ -62,18 +62,18 @@ header .navbar ul li a:hover{
 }
 
 .texthome {
-  font-size:30px;
+  font-size:300%;
   text-align:left;
-  padding: 90px;
+  padding: 5%;
   backdrop-filter:blur(8px);
-  width:900px ;
+  width:100% ;
   color: whitesmoke;
 
 }
 .h1main {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 70px;
+  font-size: 800%;
   padding: 150px;
   text-align: left;
   flex-wrap: wrap;

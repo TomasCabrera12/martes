@@ -3,85 +3,87 @@
   margin: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 html {
   font-size: 62.5%;
 }
-body{
+
+body {
   min-height: 100vh;
   background: url(../img/90787.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
-header{
+header {
   position: fixed;
-  top: 0;left: 0;right: 0;
-  transition: all 0,5s ease;
-  box-shadow: 0 5px 10px rgba(0,0,0,1);
-padding: 0px 7px;
-display: flex;
-align-items: center;
-justify-content:space-between;
-z-index: 1000;
-
-
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0, 5s ease;
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  padding: 0px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 999;
 }
-header .logo{
+
+header .logo {
   font-weight: bolder;
   font-size: 25px;
   color: #333;
-  
 }
-header .navbar ul{
+
+header .navbar ul {
   list-style: none;
+}
 
-  
+header .navbar ul li {
+  position: relative;
+  float: left;
 }
-header .navbar ul li{
-position: relative;
-float: left; 
 
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 10px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.5s ease;
 }
-header .navbar ul li a{
- font-size: 20px;
- padding:10px ;
- color: #333;
- display:block ;
- text-decoration: none;
- font-weight: bolder;
- transition: all 0.5s ease;
-}
-header .navbar ul li a:hover{
-  background-color:#333;
-  color:#ffffff;
+
+header .navbar ul li a:hover {
+  background-color: #333;
+  color: #ffffff;
   border-radius: 15px;
 }
 
 .texthome {
-  font-size:30px;
-  text-align:left;
-  padding: 90px;
-  backdrop-filter:blur(8px);
-  width:900px ;
+  font-size: 300%;
+  text-align: left;
+  padding: 5%;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  width: 100%;
   color: whitesmoke;
-
 }
+
 .h1main {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 70px;
+  font-size: 800%;
   padding: 150px;
   text-align: left;
   flex-wrap: wrap;
- padding-left: 50px;
- padding-bottom:500px ;
-
- 
+  padding-left: 50px;
+  padding-bottom: 500px;
 }
+
 footer {
   background-color: dimgrey;
   text-align: center;
@@ -89,109 +91,131 @@ footer {
   font-size: medium;
   overflow: hidden;
   padding: 10px;
-  opacity: .7;
+  opacity: 0.7;
 }
-.h1contacto{
+
+.h1contacto {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 70px;
   padding-top: 150px;
   text-align: center;
   flex-wrap: wrap;
- padding-left: 50px;
- padding-bottom:500px ;
- 
+  padding-left: 50px;
+  padding-bottom: 500px;
 }
-.formulario{
+
+.formulario {
   text-align: center;
-  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   color: beige;
-  font-size:20px;
-  
+  font-size: 20px;
 }
-.h1lanzmientos{
+
+.h1lanzmientos {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 70px;
+  font-size: 700%;
   padding-top: 150px;
   text-align: center;
   flex-wrap: wrap;
- padding-left: 50px;
- padding-bottom:50px ;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
-.peugeot{
+
+.peugeot {
   color: beige;
-  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   font-size: medium;
   text-align: center;
 }
-.cajapeugeot{
-backdrop-filter:blur(8px);
-text-align: center;
+
+.cajapeugeot {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  text-align: center;
 }
-.h1noticias{
+
+.h1noticias {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 70px;
   padding-top: 150px;
   text-align: center;
   flex-wrap: wrap;
- padding-left: 50px;
- padding-bottom:50px ;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
-.mini{
+
+.mini {
   color: beige;
-  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   font-size: large;
   text-align: center;
 }
-h2{
+
+h2 {
   text-align: center;
 }
-.h1test{
+
+.h1test {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 70px;
   padding-top: 150px;
   text-align: center;
   flex-wrap: wrap;
- padding-left: 50px;
- padding-bottom:50px ;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
-.ptest{
+
+.ptest {
   color: beige;
-  font-size:large;
-  backdrop-filter:blur(8px);
+  font-size: large;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
-.pruebas{
-  backdrop-filter:blur(8px);
+
+.pruebas {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   text-align: center;
 }
 
- @media(max-width:991px){
-  header{
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header {
     padding: 20px;
   }
-  header label{
+  header label {
     display: initial;
   }
-  header .navbar{
+  header .navbar {
     position: absolute;
-    top:100%;left: 0;right: 0;
-    background: transparent;
-    border-top: 1px solid rgba(0, 0, 0,1);
-    color: black;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
   }
-  header .navbar ul li{
-width: 100%;
+  header .navbar ul li {
+    width: 100%;
   }
-  header .navbar ul li ul{
-    position: relative;
-    width:100% ;
+  #menu-bar:checked ~ .navbar {
+    display: initial;
   }
-  header .navbar ul li a{
-    color: blue;
-  }
-
-  }
- 
+}/*# sourceMappingURL=style.css.map */
