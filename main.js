@@ -55,6 +55,28 @@ class Producto {
     let modeloNuevo = new Producto (nombre, modelo, precio);
     productosAgregados.push(modeloNuevo);
     return productosAgregados
-   }
+   }//
 //ahora despedida por alert 
 alert(`Hasta luego!!!`)
+
+//metodos para acceder a los elementos
+document.querySelector("h1").textContent = "Texto desde JS";
+console.log(document.querySelector("h1"));
+console.log(document.querySelector(".h1main"));
+
+//manera de escuchar los eventos
+const parrafo = document.getElementById("parrafo");
+const boton = document.getElementById("btn");
+const escribir = () => {
+    let texto = prompt("que queres escribir?");
+    parrafo.innerText = texto;
+}
+
+boton.addEventListener("click", escribir);
+
+
+// storage & JSON 
+
+let mensaje = "Bienvenido a la clase 10";
+
+localStorage.setItem("saludo",mensaje);
